@@ -88,9 +88,14 @@ I'm Navaneeth, the creator of Passlord. I'm passionate about advancing cybersecu
 
 ### License
 
-Passlord is licensed under the MIT license.
+Passlord is licensed under the GPLv3 license. See [LICENSE](LICENSE) for more information.
 
 
 ### Legal disclaimer:
 
 I want to emphasize that I am not liable and hereby disclaim any responsibility for any misuse of the 'passlord' tool. Users are solely responsible for their actions when utilizing this tool. Your understanding is appreciated.
+
+### Follow Me On
+
+[<img src="https://github.com/navnee1h/dummy/assets/95498140/75867de4-e3f6-4da2-9148-ac0d701c5677" width="30">](https://www.linkedin.com/in/navnee1h/)
+[<img src="https://github.com/navnee1h/dummy/assets/95498140/248e5404-04e6-4286-bba6-e1118e59feda" width="30">](https://medium.com/@navnee1h/)
