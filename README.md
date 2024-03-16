@@ -32,7 +32,7 @@
     
     ```bash
     # Clone the Passlord repository:
-    git clone <https://github.com/navnee1h/passlord.git>
+    git clone https://github.com/navnee1h/passlord.git
     cd passlord
     ```
     
@@ -88,7 +88,7 @@ I'm Navaneeth, the creator of Passlord. I'm passionate about advancing cybersecu
 
 ### License
 
-Passlord is licensed under the GPLv3 license. See [LICENSE](LICENSE) for more information.
+Passlord is licensed under the MIT license. See [LICENSE](LICENSE) for more information.
 
 
 ### Legal disclaimer:
