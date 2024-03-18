@@ -2,7 +2,7 @@ import os
 import subprocess
 from datetime import datetime
 from itertools import product
-#____________________________________PASSLORD______________________________________________________________________________________________
+
 class TextColors:
     RED = "\033[91m"
     GREEN = "\033[92m"
@@ -30,13 +30,10 @@ ascii_art = """
 \033[94m\033[1m  o   o   o      o   o    o\033[0m
 """
 
-#------------------------------------------------------------------------
-# Function to modify a single word
 def modify_word(word):
     #uppercase_word = word.upper()
     lowercase_word = word.lower()
     titlecase_word = word.title()
-    
     return [lowercase_word, titlecase_word]
     
 # Function to check for and remove duplicates in each array
@@ -56,11 +53,10 @@ def remove_duplicates(modified_array):
 # Function to generate combinations of modified names
 def get_name_combinations(name):
     modified_name = []
-    
     if name:
         modified_name = [modify_word(word) for word in name.split()]
     return remove_duplicates(modified_name)
-    
+
 # Function to generate combinations of all names
 def generate_name_combinations():
 
@@ -91,11 +87,7 @@ def generate_name_combinations():
     global oname
     oname = [''.join(combination) for combination in product(*othername)]
     
-#generate_name_combinations()
 
-#-----------------------------------------------------------------------------------------------
-
-# Function to modify a single word
 def modify_word(word):
     #uppercase_word = word.upper()
     lowercase_word = word.lower()
@@ -123,7 +115,6 @@ def get_name_combinations(name):
         modified_name = [modify_word(word) for word in name.split()]
     return remove_duplicates(modified_name)
 
-# Function to generate combinations of all names
 def generate_other_combinations():
     gf_name = input(f"{TextColors.BLUE}〘〙 Girl Friend : {TextColors.RESET}").strip()
     house_name = input(f"{TextColors.BLUE}〘〙 House Name  : {TextColors.RESET}").strip()
@@ -151,16 +142,12 @@ def generate_other_combinations():
     global othername
     othername = [''.join(combination) for combination in product(*otname)]
     
-#generate_other_combinations()
-
-#--------------------------------------------------------------------------------------------
 
 dyear = []
 dob = []
 
 def generate_dob_combinations():
     def get_valid_date_input():
-    
         while True:
             dob_input = input(f"{TextColors.BLUE}〘〙 DoB (DD MM YYYY): {TextColors.RESET}")
             if not dob_input:
@@ -181,22 +168,19 @@ def generate_dob_combinations():
         # Store various combinations of date of birth as strings
         dob = [
             dob_date.strftime("%d%m%Y"),  # 04082009
-            #dob_date.strftime("%Y%m%d"),  # 20090804
+            #dob_date.strftime("%Y%m%d"), # 20090804
             #dob_date.strftime("%d%m%y"), # 040809
             #dob_date.strftime("%m%y"),   # 0809
             dob_date.strftime("%d"),      # 04
             dob_date.strftime("%m"),      # 08
             #dob_date.strftime("%d%m"),   # 0408
-            #dob_date.strftime("%d%m")
             str(dob_date.day)             # 4
         ]
         
         month = dob_date.month
         day = dob_date.day
         
-#generate_dob_combinations()
 
-#-------------------------------------------------------------------------------------------
 ophn = []
 phn = []
 
@@ -240,9 +224,7 @@ def generate_mob_combinations():
         return ophn, phn
     ophn, phn = phn_check()
     
-#generate_mob_combinations()
 
-#---------------------------------------------------------------------------------------------
 def generate_all_combinations():                                                                 
     max_digits = 6
     combinations = []
@@ -268,9 +250,8 @@ def print_all_generated(start_year, end_year):
     rnum1.extend(additional_elements)
 start_year = 1970
 end_year = 2024
-#print_all_generated(start_year, end_year)
 
-#----------------------------count--------------------------------------------------------------
+
 def combine_and_count(arr_pointers):
     lengths = [len(globals().get(pointer, [])) for pointer in arr_pointers]
 
@@ -282,7 +263,7 @@ def combine_and_count(arr_pointers):
         count *= length
     return count
 
-#----------------------------------generate_lines---------------------------------
+
 def combine_and_write(arr_pointers, output_file):
     # Check if there are any non-empty arrays to combine
     if any(not globals().get(pointer, []) for pointer in arr_pointers):
@@ -299,7 +280,7 @@ def combine_and_write(arr_pointers, output_file):
             output_file.write(combined_result + '\n')
 
 
-#__________________________________________________________________________________________________
+
 def process_file():
     try:
         # Get the directory where the script is located
@@ -336,10 +317,8 @@ def process_file():
         print(f"{TextColors.RED}  ⭆  An error occurred: {e}{TextColors.RESET}")
         exit()
 
-# Call the function
-#process_file()
 
-#----------------------------------Removing duplicate lines and less than 8 characters ------------------
+
 def update_file_and_print_line_count():
     with open(output_file_path, 'r+') as file:
         lines = file.readlines()
@@ -357,7 +336,6 @@ def update_file_and_print_line_count():
         updated_line_count = len(unique_lines)
         print(f"{TextColors.BLUE}After deduping, {TextColors.RESET}{updated_line_count}{TextColors.BLUE} lines remain!{TextColors.RESET}")
         print(f"{TextColors.BLUE}Results written to {TextColors.RESET}{output_file_path}")
-#update_file_and_print_line_count()
 
 
 
@@ -390,7 +368,6 @@ def check_file_existence(file_name):
 file_name = "rules.txt"
 check_file_existence(file_name)
 
-######################## MAIN FUNCTION ########################################################
 def run_main_function():
     #file_to_check = "rules.txt"
 

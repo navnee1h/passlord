@@ -28,6 +28,21 @@
 
 ### **First Method**
 
+- **Installation:**
+    
+    ```bash
+    # install via pip:
+    pip install passlord
+    ```
+    
+- **Usage :**
+    
+    ```bash
+    passlord
+    ```
+
+
+### **Second Method**
 - **Installation :**
     
     ```bash
@@ -42,21 +57,6 @@
     python passlord.py
     ```
     
-
-### **Second Method**
-
-- **Installation:**
-    
-    ```bash
-    # install via pip:
-    pip install passlord
-    ```
-    
-- **Usage :**
-    
-    ```bash
-    passlord
-    ```
 
 
 ### Provide these details:
