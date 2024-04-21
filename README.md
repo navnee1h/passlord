@@ -97,5 +97,5 @@ I want to emphasize that I am not liable and hereby disclaim any responsibility 
 
 ### Follow Me On
 
-[<img src="https://github.com/navnee1h/dummy/assets/95498140/75867de4-e3f6-4da2-9148-ac0d701c5677" width="30">](https://www.linkedin.com/in/navnee1h/)
-[<img src="https://github.com/navnee1h/dummy/assets/95498140/248e5404-04e6-4286-bba6-e1118e59feda" width="30">](https://medium.com/@navnee1h/)
+[Linkedin](https://www.linkedin.com/in/navnee1h/)
+[Medium](https://medium.com/@navnee1h/)
