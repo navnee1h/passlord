@@ -387,7 +387,7 @@ def run_main_function():
             break
     except KeyboardInterrupt:
         print(f"\n{TextColors.RED}\033[1m Exiting....\033[0m{TextColors.RESET}")
-        # Additional cleanup or exit code can be added here if needed
+        # Additional cleanup
 
 if __name__ == "__main__":
     run_main_function()
