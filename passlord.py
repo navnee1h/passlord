@@ -17,11 +17,11 @@ ascii_art = """
 \033[94m\033[1m         o  o   o  o\033[0m 
 \033[94m\033[1m         |\\/ \\^/ \\/|\033[0m               \033[93m█▀▄ ▄▀▄ ▄▀▀ ▄▀▀ █   ▄▀▄ █▀▄ █▀▄\033[0m  
 \033[94m\033[1m         |,-------.|\033[0m               \033[93m█▀  █▀█ ▄██ ▄██ █▄▄ ▀▄▀ █▀▄ █▄▀\033[0m          
-\033[94m\033[1m       ,-.\033[93m(|)   (|)\033[94m\033[1m,-.\033[0m                                     \033[93mv1.0.0\033[0m
+\033[94m\033[1m       ,-.\033[93m(|)   (|)\033[94m\033[1m,-.\033[0m                                     \033[93mv1.1.0\033[0m
 \033[94m\033[1m       \\_*._ ' '_.* _/\033[0m         \033[93m\033[1mAdvanced customizable wordlist generator
 \033[94m\033[1m        /`-.`--' .-'\\\033[0m        ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━●\033[0m
-\033[94m\033[1m   ,--./    `---'    \\,--.\033[0m   ┃   https://medium.com/@navnee1h            ┃
-\033[94m\033[1m   \\   |(  )     (  )|   /\033[0m   ┃   https://www.linkedin.com/in/navnee1h    ┃
+\033[94m\033[1m   ,--./    `---'    \\,--.\033[0m   ┃   https://navnee1h.github.io              ┃
+\033[94m\033[1m   \\   |(  )     (  )|   /\033[0m   ┃   https://linkedin.com/in/navnee1h        ┃
 \033[94m\033[1m    \\  | ||       || |  /\033[0m    ┃   https://github.com/navnee1h/passlord    ┃
 \033[94m\033[1m     \\ | /|\\     /|\\ | /\033[0m     ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━●\033[0m
 \033[94m\033[1m     /  \\-._     _,-/  \\\033[0m      ✯ Edit rules.txt for personalized wordlist changes
@@ -120,7 +120,7 @@ def generate_other_combinations():
     house_name = input(f"{TextColors.BLUE}〘〙 House Name  : {TextColors.RESET}").strip()
     pet_name = input(f"{TextColors.BLUE}〘〙 Pet Name    : {TextColors.RESET}").strip()
     company_name = input(f"{TextColors.BLUE}〘〙 Company Name: {TextColors.RESET}").strip()
-    other_name = input(f"{TextColors.BLUE}〘〙 Other Name  : {TextColors.RESET}").strip()
+    other_name = input(f"{TextColors.BLUE}〘〙 Other keyword  : {TextColors.RESET}").strip()
 
     gfname = get_name_combinations(gf_name)
     global gf
@@ -334,8 +334,8 @@ def update_file_and_print_line_count():
 
         file.truncate()
         updated_line_count = len(unique_lines)
-        print(f"{TextColors.BLUE}After deduping, {TextColors.RESET}{updated_line_count}{TextColors.BLUE} lines remain!{TextColors.RESET}")
-        print(f"{TextColors.BLUE}Results written to {TextColors.RESET}{output_file_path}")
+        print(f"{TextColors.BLUE}Success! {TextColors.RESET}{updated_line_count}{TextColors.BLUE} unique passwords have been generated.{TextColors.RESET}")
+        print(f"{TextColors.BLUE}File saved at {TextColors.RESET}{output_file_path}")
 
 
 
