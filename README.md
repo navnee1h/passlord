@@ -98,4 +98,3 @@ I want to emphasize that I am not liable and hereby disclaim any responsibility 
 ### Follow Me On
 
 [Linkedin](https://www.linkedin.com/in/navnee1h/) | 
-[Medium](https://medium.com/@navnee1h/)
